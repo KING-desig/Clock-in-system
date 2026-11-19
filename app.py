@@ -1,4 +1,5 @@
-﻿from flask import Flask, render_template_string, request, redirect, url_for, session, jsonify, Response
+﻿from werkzeug.security import generate_password_hash, check_password_hash
+from flask import Flask, render_template_string, request, redirect, url_for, session, jsonify, Response
 from datetime import datetime, date
 import sqlite3, math, io, base64, csv, json
 import qrcode
